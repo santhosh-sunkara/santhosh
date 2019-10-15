@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="./css/register.css">
+   </head>
+   <body onload="pageLoad()">
+      <div id="register_form">
+         <form>
+
+              
+
+            <div class="container">
+                    <div class="header">
+                            <h1>Register</h1>
+                            <p>Please fill in this form to participate in the Game.</p>
+                          </div>
+                          <hr>
+               <div>
+                    <label class="container-radio">Single
+                            <input class="detailsCls" type="radio"  id="r1" onclick="radioClicked()"  name="radio">
+                            <span class="checkmark"></span>
+                          </label>
+
+                          <label class="container-radio">Couple
+                                <input  class="detailsCls" type="radio" id="r2" onclick="radioClicked()" checked="checked"  name="radio">
+                                <span class="checkmark"></span>
+                              </label>
+               </div>
+               <br>
+               <div class="block_container">
+                  <div class="detailsCls">
+                     <label for="name"><b>Your Name</b></label>
+                     <input type="text" placeholder="Enter Your Name" id="name" required>
+                  </div>
+                  <div class="detailsCls">
+                     <label for="name_gift"><b>Gift Suggestion</b></label>
+                     <input type="text" placeholder="Gift Name" id="name_gift">
+                  </div>
+               </div>
+               <div id="spouse_details" class="block_container">
+                  <div class="detailsCls">
+                     <label for="spouse_name"><b>Your Spouse Name</b></label>
+                     <input type="text" placeholder="Enter Your Spouse Name" id="spouse_name" required>
+                  </div>
+                  <div class="detailsCls">
+                     <label for="spouse_name_gift"><b>Gift Suggestion</b></label>
+                     <input type="text" placeholder="Gift Name" id="spouse_name_gift">
+                  </div>
+               </div>
+               <hr>
+               <button onclick="register()" class="registerbtn">Register</button>
+               <div  class="button_cont" align="center"><a class="example_a"  onclick="openWin()"   rel="nofollow noopener">Go To Draw</a></div>
+            </div>
+          
+         </form>
+      </div>
+   </body>
+   <script src="./js/register.js" type="text/javascript"></script>
+</html>

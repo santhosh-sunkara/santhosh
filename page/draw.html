@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="../css/draw.css">
+   </head>
+   <body onload="pageLoadEvent()">
+      <div id="draw_form" style="text-align: center">
+         <div class="detailsCls" id="drawDiv">
+            <label for="name"><b>Your Name</b></label>
+            <select onchange="onUsrChange()" class="nameListCls" id="nameListSelect">
+            </select>
+         </div>
+         <div class="detailsCls" id="drawDivSuccess" style="visibility: hidden">
+            <h2>Hi, <span id="user_name"></span></h2>
+         </div>
+         <button id="drawBtn" onclick="draw()" class="drawbtn">DRAW</button>
+         <div id="draw" style="visibility: hidden;">
+            <img src="../assets/animated-congratulation-image.gif" alt="Flowers in Chania"></br>
+            <b> You have to give gift to <span id="drawnUsr"></span>.</b>
+            <h5><span id="drawnUsr1"></span> Likes to take <span id="gift"></span> from you.</h5>
+         </div>
+      </div>
+      <button class="gridbtnCls"onclick="showGrid()">SHOW GIFT EXCHANGE GAME RESULT</button>
+      <br>
+      <hr>
+      <div id="gridDiv" style="visibility: hidden">
+         <table>
+            <thead>
+               <tr>
+                  <td>Participant Name</td>
+                  <td>Drawn Participant</td>
+               </tr>
+            </thead>
+            <tbody id="gridDatatbl">
+            </tbody>
+         </table>
+         <br>
+      </div>
+      <div  onclick="cleardata()" class="button_cont" align="center"><a class="example_a"   rel="nofollow noopener">Clear Data</a></div>
+   </body>
+   <script src="../js/draw.js" type="text/javascript"></script>
+</html>
